@@ -1,85 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certo - Your Mobile Privacy is Our Mission</title>
-    <!-- Bootstrap 5 CDN -->
+    <title>Certo Software | Mobile Privacy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts (Figtree is a close match to the Figma design) -->
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-    <!-- NAVBAR START -->
-    <header class="header-nav bg-white shadow-sm sticky-top">
-        <nav class="navbar navbar-expand-lg py-3">
-            <div class="container">
-                <!-- Logo -->
-                <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo.png" alt="Certo Logo" class="logo-img">
-                </a>
-
-                <!-- Mobile Toggle -->
-                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#certoNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Nav Links -->
-                <div class="collapse navbar-collapse" id="certoNavbar">
-                    <ul class="navbar-nav ms-auto align-items-center">
-                        <li class="nav-item"><a class="nav-link" href="#">iPhone</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Android</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="companyDropdown" role="button" data-bs-toggle="dropdown">
-                                Company
-                            </a>
-                        </li>
-                        <li class="nav-item ms-lg-3">
-                            <a href="#" class="btn btn-signin">Sign in</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg py-3 sticky-top bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="Certo Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link mx-2" href="#">iPhone</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#">Android</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#">Help</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mx-2" href="#" role="button"
+                            data-bs-toggle="dropdown">Company</a>
+                        <ul class="dropdown-menu"></ul>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary-certo" href="#">Sign In</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
-    <!-- NAVBAR END -->
-
-    <main>
-        <!-- HERO SECTION START -->
-      
-
-        <section class="hero-section">
-    <div class="container-fluid p-0">
-        <div class="row g-0 align-items-stretch">
-            
-            <div class="col-lg-6 hero-text-area">
-                <div class="hero-text-inner">
-                    <h1 class="hero-title">Your mobile privacy is our mission</h1>
-                    <p class="hero-subtitle">
-                        Think your phone has been hacked? Our trusted apps make it easy for you to scan, detect and remove threats from your iPhone and Android devices.
-                    </p>
-                    <div class="hero-btns">
-                        <a href="#" class="btn btn-yellow">Get Certo for iPhone &rarr;</a>
-                        <a href="#" class="btn btn-outline-navy">Get Certo for Android</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 hero-visual-area">
-                <div class="hero-bg-tinted">
-                    <img src="assets/images/bg.png" class="hero-person-img" alt="User using phone">
-                </div>
-                
-                <div class="hero-phone-overlay">
-                    <img src="assets/images/phone.png" class="mockup-img" alt="Certo App Dashboard">
-                </div>
-            </div>
-
         </div>
-    </div>
-</section>
-        <!-- HERO SECTION END -->
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-left">
+            <div class="hero-left-inner">
+                <h1>Your mobile privacy is our mission</h1>
+                <p>Think your phone has been hacked? Our trusted apps make it easy for you to scan, detect and remove
+                    threats from your iPhone and Android devices.</p>
+                <div class="hero-ctas">
+                    <a href="#" class="btn-certo-yellow">Get Certo for iPhone &rarr;</a>
+                    <a href="#" class="btn-outline-android">Get Certo for Android</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="hero-frame">
+                <img src="assets/images/bg.png" alt="Background" class="hero-bg-layer">
+                <img src="assets/images/phone.png" alt="Phone" class="hero-phone-layer">
+            </div>
+        </div>
+    </section>
