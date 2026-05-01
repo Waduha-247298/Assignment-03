@@ -460,3 +460,21 @@ left: 42.88px;
         margin-top: 50px;
     }
 }
+                                 /* FEATURES SECTION */
+.features {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+}
