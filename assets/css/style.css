@@ -1,0 +1,22 @@
+/* VARIABLES */
+:root {
+    --primary-color: #4CAF4F;
+    --text-color: #333;
+    --heading-font: 700;
+}
+
+/* GLOBAL */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+
+/* HERO */
+.hero {
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: var(--heading-font);
+}
