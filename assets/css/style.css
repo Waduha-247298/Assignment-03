@@ -211,59 +211,102 @@
   }
               /* TESTIMONIAL SECTION */
 
-.testimonials-section {
-    background-color: #FFC247;
-    overflow: hidden; 
-    width: 100%;
-}
-.stars {
-    color: #FFC247; /* This turns the text stars yellow */
-    font-size: 1.2rem;
-    letter-spacing: 2px; /* Adds a nice gap between stars */
-    margin-bottom: 15px;
-    display: block;
-}
-.testimonial-wrapper {
-    display: flex;
-    justify-content: center; 
-    overflow: visible; /* Taake side waale cards container se bahar nikal sakein */
+.testimonial-section {
+    background-color: var(--bright-yellow);
+    padding: 80px 0;
+    overflow: hidden;
 }
 
-.testimonial-card {
-    background: #FFFFFF !important; /* Forcefully white background */
-    opacity: 1 !important; /* Transparency khatam karne ke liye */
-    border-radius: 30px;
+.section-title {
+    font-weight: 800;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    color: var(--dark-navy);
+height: 91;
+top: 83px;
+left: 96px;
+padding-right: 550.58px;
+padding-bottom: 1px;
+
+}
+
+/* HORIZONTAL SCROLL TRACK */
+.review-scroll-container {
+    padding: 20px 0 40px;
+    overflow-x: auto;
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+.review-scroll-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar Chrome/Safari */
+}
+
+.review-track {
+    display: flex;
+    gap: 25px;
+    padding: 0 10%; /* Matches hero text padding */
+}
+
+/* REVIEW CARDS */
+.review-card {
+    background: #fff;
+    min-width: 350px;
     padding: 35px;
-    width: 420px; 
-    height: 306px;
-    flex: 0 0 auto; /* Card ko shrink hone se rokta hai */
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
     display: flex;
     flex-direction: column;
 }
-/* Featured Label Size */
-.featured-label {
+
+.stars {
+    color: var(--bright-yellow);
     font-size: 1.2rem;
-    color: #02033B;
-    white-space: nowrap;
+    margin-bottom: 15px;
 }
 
-/* Logos Size Fix */
-.brand-logo {
-
-    height: 35px !important; 
-    width: auto;
-    object-fit: contain;
-    
-    filter: brightness(0) saturate(100%) invert(10%) sepia(90%) saturate(1000%) hue-rotate(220deg);
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
+.review-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--dark-navy);
+    flex-grow: 1;
+    margin-bottom: 20px;
 }
 
-.brand-logo:hover {
-    opacity: 1;
+.reviewer-name {
+    font-weight: 800;
+    font-size: 1rem;
+    margin: 0;
 }
-/* Row container ki width Figma ke mutabiq */
-.featured-row {
-    max-width: 1248px;
-    margin: 0 auto;
+
+/* BRAND LOGOS AREA */
+.featured-text {
+    color:  rgba(2, 3, 59, 1);
+    width: 129px;
+height: 30px;
+top: 31.5px;
+
+    margin-right: 20px;
+    font-family: Inter;
+font-weight: 800;
+font-style: Extra Bold;
+font-size: 23px;
+line-height: 30px;
+letter-spacing: -0.48px;
+vertical-align: middle;
+width: 129;
+height: 30;
+top: 31.5px;
+
+}
+
+.brand-img {
+    width: 130px;
+height: 95px;
+left: 42.88px;
+    transition: 0.3s;
+}
+/* 5. Fix the About Section width */
+.about-section {
+    width: 1000px; /* Changed from 14px */
+    height: 600px;
+    padding: 45px 5%;
 }
