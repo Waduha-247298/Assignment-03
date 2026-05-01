@@ -1,117 +1,147 @@
-/* ===== GENERAL ===== */
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f4f7fb;
+/* DESIGN VARIABLES */
+:root {
+    --primary-blue: #444BD3;
+    --dark-navy: #02033B;
+    --bright-yellow: #FFC247;
+    --bg-light-blue: #F3F7FF;
+    --text-muted: #4A4B65;
+    --font-main: 'Figtree', sans-serif;
+}
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+   /* This prevents the horizontal scrollbar */
 }
 
-/* ===== NAVBAR ===== */
-.main-header {
-    padding: 20px 0;
-}
-.logo-box {
-    display: flex;
-    align-items: center;
-    gap: 6px; /* smaller gap = cleaner */
+
+.hero-title {
+    font-weight: 800;
+    font-family: Inter;
+font-style: Extra Bold;
+font-size: 60px;
+line-height: 75px;
+letter-spacing: -1.2px;
+vertical-align: middle;
+    color: var(--dark-navy);
+  
 }
 
-.logo-box img {
-    width: 26px;
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    width: 597.8875122070312px;
+height: 82px;
+top: 4px;
+
+
 }
 
-.logo-box span {
+.btn-signin {
+
+    background-color: var(--primary-blue);
+    color: white !important;
+    border-radius: 50px;
+    padding: 10px 28px;
     font-weight: 700;
-    font-size: 18px;
-}
+    border: none;
+    transition: 0.3s ease;
 
-.nav-menu {
-    list-style: none;
-    gap: 25px;
 }
+.btn-signin:hover {
 
-.nav-menu li {
-    cursor: pointer;
-    font-weight: 500;
+    background-color: #353ab3;
+    transform: translateY(-1px);
+
 }
-
-.login-btn {
-    background-color: #4f46e5;
-    color: white;
-    border-radius: 20px;
-    padding: 6px 16px;
-}
-
-/* ===== HERO ===== */
-.hero-section {
-    padding: 80px 0;
-}
-
-.hero-section h1 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-.hero-section p {
-    margin: 20px 0;
-    color: #666;
-}
-
-/* ===== BUTTONS ===== */
-.buttons {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
+/* BUTTONS */
 .btn-yellow {
-    background-color: #fbbf24;
-    border-radius: 25px;
-    padding: 10px 18px;
+    background-color: var(--bright-yellow);
+    color: var(--dark-navy);
+    font-weight: 800;
+    padding: 16px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 15px;
 }
 
-/* ===== IMAGE SECTION ===== */
-.image-wrapper {
+.btn-outline-navy {
+    border: 2px solid var(--dark-navy);
+    color: var(--dark-navy);
+    font-weight: 800;
+    padding: 16px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+}
+/* 1. Remove the fixed 1440px width - this was the main culprit */
+.hero-section {
+    background-color: rgba(243, 248, 255, 1);
+   padding-top: 45px;
+    width: 100%; /* Changed from 1440px to 100% */
+    height: auto; /* Allow height to scale naturally */
+    overflow: hidden; /* Contains the absolute elements */
+}
+
+.hero-text-area {
+    padding: 40px 5%; 
+    display: flex;
+    align-items: center; 
+
+}
+/* 3. Fix the visual area and prevent overflow */
+.hero-visual-area {
     position: relative;
-    border: 10px solid #4f46e5;
-    height: 400px;
-    overflow: hidden;
+    overflow: hidden; 
+    min-height: 508px;
+     border-top: 12px solid var(--primary-blue);
+     height: 100%;
 }
-
-.bg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-    /* closer orange tint */
-    filter: sepia(1) saturate(5) hue-rotate(340deg) brightness(1.05);
-}
-.phone {
+.hero-bg-tinted {
     position: absolute;
-    width: 240px;
+    inset: 0;
+    z-index: 1;
 
-    top: 55%;      /* push slightly down */
-    left: 58%;     /* push slightly right */
-
-    transform: translate(-50%, -50%);
 }
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
+.hero-person-img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+/* 4. Fix the Phone Overlay Positioning */
+.hero-phone-overlay {
+    position: absolute;
+    top: 50%;
+    left: 9%; /* Adjusted from 50% + translate to keep it within view */
+    transform: translateY(-50%); 
+    z-index: 10;
+    width: 240px; /* Kept fixed size for the phone mockup */
+}
 
-    .hero-section {
-        text-align: center;
-    }
-
-    .hero-section h1 {
-        font-size: 30px;
-    }
-
-   .image-wrapper {
-    position: relative;
-    border: 12px solid #4f46e5;
-    height: 420px;
+.mockup-img {
     width: 100%;
-    max-width: 420px;   /* keeps it controlled like Figma */
-    margin-left: auto;  /* pushes right side nicely */
-    overflow: hidden;
+    border-radius: 35px;
+     /* Matches Figma depth */
 }
+/* RESPONSIVENESS */
+@media (max-width: 991px) {
+    .hero-text-area {
+        text-align: center;
+        justify-content: center;
+        padding: 60px 5%;
+    }
+    
+    .hero-visual-area {
+        height: 450px;
+        border-left: none;
+        border-top: 12px solid var(--primary-blue);
+    }
+
+    .hero-phone-overlay {
+        width: 241.5px;
+      height: 461.25px;
+    }
 }
