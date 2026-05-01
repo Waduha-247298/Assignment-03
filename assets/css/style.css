@@ -38,7 +38,7 @@
 }
 
 .btn-primary-certo:hover {
-  background-color: #004aad; /* slightly darker blue */
+  background-color: #004aad; 
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
@@ -461,20 +461,76 @@ left: 42.88px;
     }
 }
                                  /* FEATURES SECTION */
-.features {
-    padding: 100px 0;
+/* Container Background */
+.features-container {
+    background-color: #f0f7ff; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Section Title */
+.section-main-title {
+    color: #0d1b3e; 
+    font-weight: 800;
+    font-size: 2.2rem;
+}
+.feature-main-card {
+    background: #ffffff;
+    padding: 60px 40px;
+    border-radius: 40px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     text-align: center;
 }
 
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 40px;
+/* Feature Item Styling */
+.feature-item h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0d1b3e;
+    margin-bottom: 15px;
 }
 
-.feature-box {
-    background: #fff;
-    padding: 30px;
-    border-radius: 20px;
+.feature-item p {
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.icon-box img {
+    width: 60px; 
+    height: auto;
+}
+
+/* Button Styles */
+.btn {
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-certo-primary {
+    background-color: #ffc107; 
+    color: #0d1b3e;
+    border: 2px solid #ffc107;
+}
+
+.btn-certo-primary:hover {
+    background-color: #e6ae00;
+    border-color: #e6ae00;
+}
+
+.btn-certo-outline {
+    background-color: transparent;
+    color: #0d1b3e;
+    border: 2px solid #0d1b3e;
+}
+
+.btn-certo-outline:hover {
+    background-color: #0d1b3e;
+    color: #fff;
+}
+
+.arrow {
+    margin-left: 8px;
 }
