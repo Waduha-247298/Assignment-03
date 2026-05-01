@@ -136,14 +136,14 @@
   }
   .hero-subtitle {
     font-size: 1.25rem;
-    max-width: 90%; /* Prevents text from stretching too far */
+    max-width: 90%; 
 }
   /* Blue frame box — sits behind everything */
   .hero-frame {
     position: relative;
     width: 100%;
     background-color: var(--certo-blue);
-    padding: 20px 0 0 20px; /* blue peeks out top and left */
+    padding: 20px 0 0 20px; 
     border-radius: 0;
   }
   
@@ -156,13 +156,11 @@
     display: block;
     border-radius: 20px 0 0 0;
   }
-  
-  /* Phone — absolutely positioned, left side of frame, overlaps white panel */
   .hero-phone-layer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 54%;        /* overlap onto white text side */
+    right: 54%;        
     width: 50%;
     max-width: 250px;
     z-index: 10;
@@ -535,16 +533,12 @@ left: 42.88px;
     margin-left: 8px;
 }
 /* --- STORY & HELP SECTION --- */
-/* Section Background - Pure White as requested */
 .story-help-section {
     background-color: #FFFFFF !important; 
     padding: 100px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-/* Yellow Gradient Card */
 .story-card-wrapper {
-    /* Subtle gradient to match image_585876.png */
     background: linear-gradient(145deg, #FFC148 0%, #FFB01C 100%);
     border-radius: 45px;      
     width: 100%;
@@ -642,4 +636,85 @@ left: 42.88px;
         margin: 0 auto;
     }
 }
+                                  /* CTA Section */
+.blue-cta-section {
+    background: linear-gradient(90deg, #4335DE 0%, #3529b5 100%);
+    padding: 100px 20px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+/* Typography */
+.cta-title {
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+.cta-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* Button Container */
+.cta-button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Yellow Button Styling */
+.btn-yellow {
+    background-color: #FFC247;
+    color: #02033B !important;
+    font-weight: 800;
+    border-radius: 50px;
+    padding: 16px 32px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-yellow:hover {
+    background-color: #e6af40;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Outline Button Styling */
+.btn-outline-white {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF !important;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 16px 32px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+.btn-outline-white:hover {
+    background-color: #FFFFFF;
+    color: #4335DE !important;
+    transform: translateY(-2px);
+}
+
+/* Responsive Scaling */
+@media (max-width: 768px) {
+    .cta-title {
+        font-size: 1.8rem;
+    }
+    .blue-cta-section {
+        padding: 60px 20px;
+    }
+}
+
 
