@@ -534,3 +534,112 @@ left: 42.88px;
 .arrow {
     margin-left: 8px;
 }
+/* --- STORY & HELP SECTION --- */
+/* Section Background - Pure White as requested */
+.story-help-section {
+    background-color: #FFFFFF !important; 
+    padding: 100px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Yellow Gradient Card */
+.story-card-wrapper {
+    /* Subtle gradient to match image_585876.png */
+    background: linear-gradient(145deg, #FFC148 0%, #FFB01C 100%);
+    border-radius: 45px;      
+    width: 100%;
+    max-width: 460px;               
+    min-height: 290px;            
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+}
+
+.story-card-wrapper h3 {
+    color: #02033B;
+    font-weight: 800;
+    font-size: 1.85rem;
+    margin-bottom: 18px;
+}
+
+.story-card-wrapper p {
+    color: #02033B;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    max-width: 310px;
+}
+
+/* Purple Button with Hover */
+.btn-purple {
+    background-color: #4335DE; 
+    color: #ffffff !important;
+    border-radius: 50px;
+    padding: 12px 28px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+.btn-purple:hover {
+    background-color: #3226a8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(67, 53, 222, 0.3);
+}
+
+/* Help Center Layout */
+.help-content {
+    padding-left: 20px;
+}
+
+.help-title {
+    color: #02033B; 
+    font-weight: 800; 
+    font-size: 1.85rem;
+    margin-bottom: 20px;
+}
+
+.help-text {
+    color: #02033B; 
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+/* Outline Button with Hover */
+.btn-outline-dark {
+    border: 1.5px solid #02033B; 
+    border-radius: 50px; 
+    padding: 12px 35px; 
+    color: #02033B; 
+    font-weight: 700; 
+    text-decoration: none; 
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+}
+
+.btn-outline-dark:hover {
+    background-color: #02033B;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .help-content {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .story-card-wrapper {
+        margin: 0 auto;
+    }
+}
+
