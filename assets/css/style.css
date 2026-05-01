@@ -1,31 +1,41 @@
-/* VARIABLES */
-:root {
-    --primary: #4F46E5;
-    --dark: #0B132A;
-    --text: #6B7280;
-    --yellow: #8d836a;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* BODY */
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #eef2ff, #ffffff);
+    background-color: #f3f6fb;
 }
 
 /* NAVBAR */
-.logo {
-    width: 30px;
+.navbar-custom {
+    background: transparent;
 }
 
-.nav-item {
+.logo {
+    width: 28px;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 20px;
+    color: #0b132a;
+}
+
+.nav li {
+    list-style: none;
     font-weight: 500;
-    color: var(--dark);
+    color: #0b132a;
     cursor: pointer;
 }
 
 .btn-signin {
-    background: var(--primary);
-    color: white;
+    background: #4f46e5;
+    color: #fff;
     border-radius: 20px;
     padding: 6px 16px;
     border: none;
@@ -38,77 +48,91 @@ body {
 
 /* TEXT */
 .hero-title {
-    font-size: 52px;
+    font-size: 54px;
     font-weight: 800;
-    color: var(--dark);
+    color: #0b132a;
     line-height: 1.2;
 }
 
 .hero-text {
     margin: 20px 0 30px;
-    color: var(--text);
+    color: #6b7280;
+    max-width: 480px;
     font-size: 16px;
-    max-width: 500px;
 }
 
 /* BUTTONS */
 .btn-yellow {
-    background: var(--yellow);
+    background: #fbbf24;
     border-radius: 30px;
     padding: 12px 22px;
     font-weight: 600;
     border: none;
 }
 
-.btn-outline-dark-custom {
-    border: 2px solid var(--dark);
+.btn-outline-custom {
+    border: 2px solid #0b132a;
     border-radius: 30px;
     padding: 12px 22px;
     background: transparent;
     font-weight: 500;
 }
 
-/* RIGHT SIDE */
-.hero-right {
+/* IMAGE BOX */
+.hero-image-box {
     position: relative;
-    height: 500px;
+    height: 420px;
+    border: 12px solid #4f46e5;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 /* BACKGROUND IMAGE */
 .bg-img {
-    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
-    filter: brightness(0.7) sepia(1) hue-rotate(350deg) saturate(5);
+
+    /* orange overlay effect */
+    filter: sepia(1) saturate(5) hue-rotate(340deg) brightness(1.05);
 }
 
-/* PHONE IMAGE */
+/* PHONE */
 .phone-img {
     position: absolute;
-    width: 260px;
+    width: 240px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 /* RESPONSIVE */
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .hero-image-box {
+        margin-top: 40px;
+    }
+}
+
 @media (max-width: 768px) {
 
-    .hero-title {
-        font-size: 34px;
+    .hero {
         text-align: center;
+    }
+
+    .hero-title {
+        font-size: 32px;
     }
 
     .hero-text {
-        text-align: center;
         margin: 20px auto;
     }
 
-    .hero-right {
-        margin-top: 40px;
-        height: 400px;
+    .hero-image-box {
+        height: 350px;
     }
 
     .phone-img {
