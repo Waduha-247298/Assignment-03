@@ -1,14 +1,33 @@
 /* VARIABLES */
 :root {
-    --primary-color: #4CAF4F;
-    --text-color: #333;
-    --heading-font: 700;
+    --primary: #4F46E5;
+    --dark: #0f172a;
+    --text: #6b7280;
+    --yellow: #FFC107;
 }
 
 /* GLOBAL */
 body {
-    font-family: Arial, sans-serif;
-    color: var(--text-color);
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fb;
+}
+
+/* NAVBAR */
+.header {
+    background: transparent;
+}
+
+.nav-item {
+    font-weight: 500;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.btn-signin {
+    background-color: var(--primary);
+    color: white;
+    border-radius: 20px;
+    padding: 6px 16px;
 }
 
 /* HERO */
@@ -16,12 +35,46 @@ body {
     padding: 80px 0;
 }
 
-.hero h1 {
+.hero-title {
     font-size: 48px;
-    font-weight: var(--heading-font);
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1.2;
 }
+
+.hero-text {
+    margin: 20px 0;
+    color: var(--text);
+    font-size: 16px;
+}
+
+/* BUTTONS */
+.btn-yellow {
+    background-color: var(--yellow);
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-weight: 600;
+}
+
+.btn-outline {
+    border: 2px solid var(--dark);
+    border-radius: 25px;
+    padding: 12px 20px;
+    background: transparent;
+}
+
+/* IMAGE */
+.hero-img {
+    max-width: 400px;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
-    .hero h1 {
+    .hero-title {
         font-size: 32px;
+    }
+
+    .hero {
+        text-align: center;
     }
 }
