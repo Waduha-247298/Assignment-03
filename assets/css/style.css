@@ -89,22 +89,6 @@ height: 82px;
 margin-bottom: 70px;
 top: 4px;
 }
-.btn-signin {
-    background-color: var(--primary-blue);
-    color: white !important;
-    border-radius: 50px;
-    padding: 10px 28px;
-    font-weight: 700;
-    border: none;
-    text-decoration: none;
-    display: inline-block;
-    transition: 0.3s ease;
-}
-
-.btn-signin:hover {
-    background-color: #353ab3;
-    transform: translateY(-1px);
-}
                         /* BUTTONS */
 .btn-yellow {
     background-color: var(--bright-yellow);
