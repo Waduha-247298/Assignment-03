@@ -113,7 +113,7 @@ top: 4px;
                        /* HERO SECTION */
 .hero-section {
     background-color: rgba(243, 248, 255, 1);
-   padding-top: 45px;
+    padding-top: 45px;
     width: 100%; 
     height: auto; 
     overflow: hidden; 
@@ -129,8 +129,8 @@ top: 4px;
     position: relative;
     overflow: hidden; 
     min-height: 508px;
-     border-top: 12px solid var(--primary-blue);
-     height: 100%;
+    border-top: 12px solid var(--primary-blue);
+    height: 100%;
 }
 .hero-bg-tinted {
     position: absolute;
@@ -209,9 +209,9 @@ display: block;
 
 .review-track {
   display: flex;
-    gap: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
+  gap: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* REVIEW CARDS */
@@ -247,13 +247,13 @@ display: block;
 
 /* BRAND LOGOS AREA */
 .featured-text {
-    color:  rgba(2, 3, 59, 1);
-    width: 129px;
+color:  rgba(2, 3, 59, 1);
+width: 129px;
 height: 30px;
 top: 31.5px;
 
-    margin-right: 20px;
-    font-family: Inter;
+margin-right: 20px;
+font-family: Inter;
 font-weight: 800;
 font-style: Extra Bold;
 font-size: 23px;
@@ -267,10 +267,10 @@ top: 31.5px;
 }
 
 .brand-img {
-    width: 130px;
+width: 130px;
 height: 95px;
 left: 42.88px;
-    transition: 0.3s;
+transition: 0.3s;
 }
 /* RESPONSIVENESS */
 @media (max-width: 1400px) {
@@ -639,7 +639,7 @@ left: 42.88px;
     background-color: #F3F8FF;
     padding: 100px 0;
     font-family: 'Inter', sans-serif;
-     text-align: center; 
+    text-align: center; 
 }
 .section-title {
     color: #02033B;
@@ -662,9 +662,9 @@ left: 42.88px;
     box-shadow: 0 15px 35px rgba(2, 3, 59, 0.05);
     transition: transform 0.3s ease;
     border: none;
-     width: 100%;
-     max-width: 340px;
-     height: auto;
+    width: 100%;
+    max-width: 340px;
+    height: auto;
 }
 
 .insight-card-fixed:hover {
@@ -771,20 +771,63 @@ left: 42.88px;
 }
 
 /* Branding Column */
-.footer-tagline { font-size: 25px; font-weight: 800; margin-bottom: 50px; }
-.social-icons { display: flex; gap: 15px; margin-bottom: 50px; }
-.small-links { margin-bottom: 50px; }
-.small-links a { color: white; margin-right: 30px; font-size: 14px; text-decoration: underline;margin-bottom: 40px; }
-.copyright-area p { font-size: 12px; color: #b0b0c0; line-height: 1.8; margin: 0; }
+.footer-tagline { 
+  font-size: 25px; 
+  font-weight: 800; 
+  margin-bottom: 50px; 
+}
+.social-icons { 
+  display: flex; 
+  gap: 15px; 
+  margin-bottom: 50px;
+ }
+.small-links { 
+  margin-bottom: 50px;
+ }
+.small-links a { 
+  color: white; 
+  margin-right: 30px; 
+  font-size: 14px; 
+  text-decoration: underline;
+  margin-bottom: 40px;
+ }
+.copyright-area p { 
+  font-size: 12px; 
+  color: #b0b0c0;
+  line-height: 1.8;
+  margin: 0; }
 
 /* Navigation Column */
-.navigation { padding-left: 50px; } 
-.certo-title { font-size: 28px; font-weight: 800; margin-bottom: 10px; }
-.white-divider { border-top: 2px solid white; width: 100%; margin-bottom: 50px; }
-.footer-nav { list-style: none; padding: 0; }
-.footer-nav li { margin-bottom: 20px; display: flex; align-items: center; }
-.footer-nav li::before { content: "—"; color: #ffc43d; margin-right: 15px; font-weight: bold; }
-.footer-nav a { color: #ffc43d; text-decoration: none; font-weight: 700; font-size: 20px; }
+.navigation { 
+  padding-left: 50px;
+ } 
+.certo-title { 
+  font-size: 28px;
+  font-weight: 800; 
+  margin-bottom: 10px; }
+.white-divider { 
+  border-top: 2px solid white;
+  width: 100%; 
+  margin-bottom: 50px; 
+}
+.footer-nav { 
+  list-style: none; 
+  padding: 0; 
+}
+.footer-nav li { 
+  margin-bottom: 20px; 
+  display: flex; 
+  align-items: center; }
+.footer-nav li::before { 
+  content: "—"; 
+  color: #ffc43d; 
+  margin-right: 15px; 
+  font-weight: bold; }
+.footer-nav a { 
+  color: #ffc43d; 
+  text-decoration: none;
+  font-weight: 700; 
+  font-size: 20px; }
 
 /* Newsletter Column */
 .newsletter-card {
@@ -829,8 +872,19 @@ left: 42.88px;
   margin-top: 30px;
 }
 
-.search-bar input { border: none; padding: 10px 20px; flex: 1; outline: none; border-radius: 50px; }
-.search-bar button { background: #02033b; color: white; border: none; padding: 10px 30px; border-radius: 50px; font-weight: bold; cursor: pointer; }
+.search-bar input { 
+  border: none; 
+  padding: 10px 20px; 
+  flex: 1; 
+  outline: none;
+   border-radius: 50px; }
+.search-bar button { 
+  background: #02033b; 
+  color: white; border: none;
+  padding: 10px 30px; 
+  border-radius: 50px; 
+  font-weight: bold; 
+  cursor: pointer; }
 
 /* The White Box */
 .white-box-fixed {
